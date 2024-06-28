@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin-left: 20px;
+}
+
+.nav__link, .download {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav__link:hover, .download:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.download {
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.download:hover {
+    background-color: #666;
+}
+
+#navbar-responsive {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        display: none;
+    }
+    
+    #navbar-responsive {
+        display: block;
+    }
+
+    .res__nav__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .res__nav__item {
+        margin: 10px 0;
+    }
+
+    .res__nav__link, .download {
+        padding: 8px 16px;
+        text-align: center;
+        display: block;
+        color: white;
+        background-color: #333;
+    }
+
+    .res__nav__link:hover, .download:hover {
+        background-color: #555;
+    }
+
+    .nav__logo__link {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

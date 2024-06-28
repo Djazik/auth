@@ -1,0 +1,47 @@
+/* Admin.module.css */
+
+.admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .admin__sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .admin__sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin__sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .admin__sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin__sidebar ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  .admin__content {
+    flex: 4;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin__pro {
+    display: flex;
+    
+  }
